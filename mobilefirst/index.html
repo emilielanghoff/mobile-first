@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aarhusfrisoeren</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/faviocon.ico" type="image/x-icon">
+    
+</head>
+<body>
+ <header>
+    <nav class="topnav">
+     <a href="#book-tid" class="mylinks mylinks1">Online Booking </a>
+     <a href="#priser1" class="mylinks mylinks2">Priser</a>
+     <a class="logo-a" href="index.html"><img class="logo" src="img/logo.png" alt="LogoAarhusFrisoeren"></a>
+     <a href="#products" class="mylinks mylinks3">Produkter</a>
+     <div class="omos-wrapper">
+        <a href="#omos" class="mylinks mylinks4">Om os</a>
+        <button class="hamburger-none" onclick="burgerfunction()"><img src="img/burger.png" alt="menu"></button>
+     </div>
+    </nav>
+ </header> 
+ <main>
+    <div id="nav-item">
+        <div><a href="#book-tid">Online Booking</a></div>
+        <div><a href="#priser1">Priser</a></div>
+        <div><a href="#products">Produkter</a></div>
+        <div><a href="#omos">Om Os</a></div>
+    </div> 
+    
+    <script>
+        function burgerfunction() {
+           var x = document.getElementById("nav-item");
+           if (x.style.display === "block") {
+               x.style.display = "none";
+            } else {
+               x.style.display = "block";
+           }
+        }
+    </script>
+    
+    <section class="online-booking" id="book-tid">
+        <img src="img/salon.jpg" alt="salon" class="salon">
+        <section class="hero-content">
+            <h5>
+                Velkommen til
+            </h5>
+            <h1>
+                Aarhus Frisøren
+            </h1>
+            <a href="https://aarhusfrisoren.onlinebooq.dk/">
+                Book tid
+            </a>
+        </section>
+    </section>
+    <section class="priser" id="priser1">
+        <h2>Priser</h2>
+        
+        <section>
+            <button onclick="onefunction()">Dameklip</button>
+            <div id="dame">
+                <p>Dameklip inkl. vask og føn ..... 429,-</p>
+                <p>Retning af pandehår ................ 99,-</p>
+            </div>
+
+            <script>
+                function onefunction() {
+                    var x = document.getElementById("dame");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+                        
+        </section>    
+        <section>
+            <button onclick="twofunction()">Herreklip</button>
+            <div id="herre">
+                <p>Herreklip inkl. vask ................. 225,-</p>
+                <p>Herreklip kun med saks .......... 299,-</p>
+                <p>Maskinklip .............................. 100,-</p>
+                <p>Skægtrimning ......................... 100,-</p>
+            </div>
+
+            <script>
+                function twofunction() {
+                    var x = document.getElementById("herre");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </section>
+        <section>
+            <button onclick="threefunction()">Striber</button>
+            <div id="striber">
+                <p>Kort hår ................................ 1399,-</p>
+                <p>Mellemlangt hår ................... 1449,-</p>
+                <p>Langt hår ............................. 1499,-</p>
+            </div>
+
+            <script>
+                function threefunction() {
+                    var x = document.getElementById("striber");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </section>
+        <section>
+            <button onclick="fourfunction()">Babylights</button>
+            <div id="babylights">
+                <p>Kort hår ................................ 1799,-</p>
+                <p>Skulderlangt hår ................... 1899,-</p>
+                <p>Langt hår .............................. 1999,-</p>
+            </div>
+
+            <script>
+                function fourfunction() {
+                    var x = document.getElementById("babylights");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </section>
+        <section>
+            <button onclick="fivefunction()">Helfarve</button>
+            <div id="helfarve">
+                <p>Farve i bunden maks. 3 cm .... 699,-</p>
+                <p>Kort hår ................................. 1349,-</p>
+                <p>Skulderlangt hår ................... 1399,-</p>
+                <p>Langt hår .............................. 1449,-</p>
+            </div>
+
+            <script>
+                function fivefunction() {
+                    var x = document.getElementById("helfarve");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </section>
+        <section>
+            <button onclick="sixfunction()">Permanent</button>
+            <div id="permanente">
+                <p>Kort hår ................................ 1099,-</p>
+                <p>Skulderlangt hår ................... 1199,-</p>
+                <p>Langt hår .............................. 1299,-</p>
+            </div>
+
+            <script>
+                function sixfunction() {
+                    var x = document.getElementById("permanente");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </section>
+        <section>
+            <button onclick="sevenfunction()">Balayage</button>
+            <div id="balayage">
+                <p>Kort hår ................................ 1399,-</p>
+                <p>Skulderlangt hår ................... 1449,-</p>
+                <p>Langt hår .............................. 1499,-</p>
+            </div>
+
+            <script>
+                function sevenfunction() {
+                    var x = document.getElementById("balayage");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </section>
+        <section>
+            <button onclick="eightfunction()">Bryn og vipper</button>
+            <div id="bryn">
+                <p>Farve af bryn ........................... 99,-</p>
+                <p>Farve af vipper ........................ 99,-</p>
+                <p>Retning af bryn ........................ 99,-</p>
+            </div>
+
+            <script>
+                function eightfunction() {
+                    var x = document.getElementById("bryn");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </section>
+        <section>
+            <button onclick="ninefunction()">Olaplex</button>
+            <div id="olaplex">
+                <p>Olaplex .................................. 399,-</p>
+                <p>Olaplex og klip ....................... 799,-</p>
+            </div>
+
+            <script>
+                function ninefunction() {
+                    var x = document.getElementById("olaplex");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                     } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </section>
+        
+
+    </section>
+    <section class="infographic">
+        <img src="img/infographic.png" alt="infographic" class="infographic1">
+        <img src="img/infographic-large.png" alt="infographic" class="infographic2">
+    </section>
+    <section class="produkter" id="products">
+        <h2>Produkter</h2>
+        <section class="prod-img">
+        <div class="grid-item">
+            <article class="container c1">
+                <img src="img/shampoo.jpg" alt="shampoo og balsam" class="img-product">
+                <div class="overlay">
+                    <p class="text"><span class="shampoo-heading">Shampoo & Balsam</span><br> Milkshakes shampoo- og balsamprodukter indeholder det unikke Integrity 41® kompleks, der forbedrer hårfarvens holdbarhed, så det bliver ved med at holde sig smukt og intenst i sin farve, samt beriger håret med den rette mængde fugt. Indholdet af mælkeprotein plejer og genopbygger hårets fibre og skællag, så det får en mere jævn overflade og et velplejet udseende. De kan anvendes af alle hårtyper, og på trods af sin plejende og berigende formel virker den ikke tyngende på håret.</p>
+                </div>
+            </article>
+        </div>
+        
+        <div class="grid-item">
+            <article class="container c2">
+                <img src="img/harkur.jpg" alt="hårkure" class="img-product">
+                <div class="overlay">
+                    <p class="text hair-text"><span class="hair-heading">Hårkure</span><br> Milkshakes hårpleje-serie er farvebevarende hårpleje. Produkterne renser blidt håret, og sørger for at opretholde hårets fugtbalance, så det ikke bliver tørt. Indeholder mælkeprotein, som har en meget nærende og plejende virkning. Efter brug af Milk shakes shampoo-serier er håret rent, glansfuldt og med en strålende hårfarve.</p>
+                </div>
+            </article>
+        </div>
+        
+        <div class="grid-item">
+            <article class="container c3">
+                <img src="img/styling.jpg" alt="styling" class="img-product">
+                <div class="overlay">
+                    <p class="text olie-text"><span class="styling">Stylingprodukter</span><br> Milkshakes håroile serie indeholder en beskyttende og reparerende olie til et skadet hår eller til hår med spaltede spidser. Olien virker varmebeskyttende, og beskytter håret mod varme fra varmeredskaber, som f.eks. glattejern, føntørrer og krøllejern.</p>
+                </div>
+            </article>
+        </div>
+        <br>
+        </section>
+    </section>
+    <section class="om-os" id="omos">
+        <h2>Om os</h2>
+        <section class="omos-container">
+        <article class="jevan">
+            <img src="img/jevan.jpg" alt="jevan">
+            <p><span class="bold">Jevan</span> har 13 års erfaring indenfor frisørfaget, og er meget passioneret i sit arbejde. Han arbejder mest med det naturlige look, og han er specialist indenfor teknikker som balayage og fade.</p>
+        </article>
+        <article class="vibeke">
+            <img src="img/vibeke.jpg" alt="vibeke">
+            <p><span class="bold">Vibeke</span> har 15 års erfaring indenfor frisørfaget, og elsker at eksperimentere med nye frisurer og teknikker. Hun er ekspert i helfarve, striber og permanente krøller.</p>
+        </article>
+        </section>
+    </section>
+ </main>
+ <footer>
+    <section class="åbning">
+        <h3>Åbningstider</h3>
+        <article class="ugedage">
+            <ul>
+                <li>Mandag</li>
+                <li>Tirsdag</li>
+                <li>Onsdag</li>
+                <li>Torsdag</li>
+                <li>Fredag</li>
+                <li>Lørdag</li>
+                <li>Søndag</li>
+            </ul>
+        </article>
+        <article class="tid">
+            <ul>
+                <li>Efter aftale</li>
+                <li>9:30 - 17:30</li>
+                <li>9:30 - 17:30</li>
+                <li>9:30 - 17:30</li>
+                <li>9:30 - 17:30</li>
+                <li>9:30 - 17:30</li>
+                <li>Efter aftale</li>
+            </ul>
+        </article>
+    </section>
+    <section class="kontakt">
+        <h3>Kontakt</h3>
+        <p>Joh. Baunes Plads 20</p>
+        <p>8000 Århus C</p>
+        <br>
+        <p>Tlf. 86142014</p>
+    </section>
+    <section class="some">
+        <h3>SoMe</h3>
+        <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Faarhusfrisoren%2F%3Fnext%3D%252Faarhusfrisoren%252F&h=AT39eYCmCOkawY-3or245ox9y-_RKQlY7VYi4oMK4zDWRTkTuxZ_G_aMxQionQ677eo4Z7zZO8ndwvG-OtJ7PEqtrnyaWSKA5CztTWfQ1E5SAZCn_Nq_g5ajfZp9zooEH-e3nQ"><img src="img/instagram.png" alt="instagram"></a>
+        <a href="https://www.facebook.com/Aarhusfrisoren/"><img src="img/facebook.png" alt="facebook"></a>
+    </section>
+    <section class="anmeldelser">
+        <h3>Anmeldelser</h3>
+        <article>
+            <h4>Rikke</h4>
+            <p>"Rigtig god oplevelse. Personalet er super søde."</p>
+        </article>
+        <article>
+            <h4>Anna</h4>
+            <p>"Fik den flotteste balayage lavet. De kan varmt anbefales."</p>
+        </article>
+        <article>
+            <h4>Morten</h4>
+            <p>"Super nemt at få en tid. Venligt og imødekommende personale."</p>
+        </article>
+        <article>
+            <h4>Mariyam</h4>
+            <p>"Kommer gerne igen"</p>
+        </article>
+    </section>
+ </footer>
+
+</body>
+</html>
